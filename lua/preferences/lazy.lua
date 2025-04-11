@@ -16,9 +16,28 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+
 -- Load plugins
 require("lazy").setup({
   spec = {
+    -- Import all plugins from the plugins directory
+    { import = "plugins" },
   },
   checker = { enabled = true, notify = false },
+  ui = {
+    -- border = "rounded",
+  },
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        "gzip",
+        "netrwPlugin",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+      },
+    },
+  },
 })
+
