@@ -17,16 +17,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
--- Load plugins
+-- Load other plugins
 require("lazy").setup({
   spec = {
     -- Import all plugins from the plugins directory
-    { import = "plugins" },
+    -- { import = "plugins" },
   },
   checker = { enabled = true, notify = false },
   ui = {
-    -- border = "rounded",
+    border = "rounded",
   },
+  install = { colorscheme = { "habamax" } },
   performance = {
     rtp = {
       disabled_plugins = {
