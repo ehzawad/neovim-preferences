@@ -1,4 +1,3 @@
--- Lua filetype specific settings for Neovim 0.11+
 return {
   setup = function()
     -- Create filetype-specific autocmd

@@ -1,4 +1,5 @@
 require("packagemanager.lazy")
 require("filetypes.lua").setup()
+require("filetypes.python").setup()
 require("utils")
 require("preferences.colorscheme")
