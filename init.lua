@@ -1,5 +1,6 @@
+local preferences = require("preferences")
+
 require("packagemanager.lazy")
-require("filetypes.lua").setup()
-require("filetypes.python").setup()
 require("utils")
+require("filetypes").setup(preferences.filetypes)
 require("preferences.colorscheme")
